@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🍴 TastyBite </title>
+  <link rel="stylesheet" text="style" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"><a href="#home">🍽️ TastyBite</a></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Milkshake">Milkshake</a></li>
+        <li><a href="#services">Services</a></li>        
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      <li><a href="#order">🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Welcome to TastyBite</h1>
+      <p>Delicious flavors crafted with passion.</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <img src="adout img.png"  id="img2">
+    <p id="details">TastyBite began in 2010 as a small family-run eatery with a passion for bringing people together through food. Starting with just five signature dishes,we have grown into a beloved restaurant serving customers from across the city. Our journey has been fueled by dedication, fresh flavors, and the smiles of those we serve.</p>
+  </section>
+
+  <section id="menu" class="fade-in">
+    <h2>Popular Dishes</h2>
+    <div class="menu-items">
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNCD0rnGcKS_IrmU1tX40_uTOf25w_uN7pg&s" alt="Pizza" />
+        <h3>Italian Pizza</h3>
+        <p>Loaded with cheese and toppings.</p>
+         <button onclick="addToOrder('Italian Pizza',200)">Order - ₹200</button>
+      </div>
+      <div class="dish">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger" />
+        <h3>Grilled Burger</h3>
+        <p>Juicy and smoky, perfect for foodies.</p>
+         <button onclick="addToOrder('Grilled Burger',250)">Order-₹250</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZF9ryM7ZVsbNRmz9RID5TraoO987_UfmnTQ&s" alt="Pasta" />
+        <h3>Creamy Pasta</h3>
+        <p>Delicate Alfredo with herbs and cream.</p>
+         <button onclick="addToOrder('Creamy Pasta',200)">Order-₹200</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOWXujtVkc2UjGLvmvdrxDXAO25IexCTc-w&s" alt="Pizza" />
+        <h3>chicken fried</h3>
+        <p>Golden, crispy, and finger-lickin good.</p>
+         <button onclick="addToOrder('chicken fried',300)">Order-₹300</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjLWID500R-YwWFVOT4cNPB2zFZyqdFaO0qQ&s" alt="Burger" />
+        <h3>chicken with rice</h3>
+        <p>Tender chicken served on a bed of fluffy rice.</p>
+         <button onclick="addToOrder('chicken with rice',250)">Order-₹250</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6ORhaOFlZxTrVMsY1v6tJMeElg_XwBxoIQ&s" alt="">
+        <h3>Noodles</h3>
+        <p>Tossed with spice and loaded with veggies.</p>
+         <button onclick="addToOrder('Noodles',150)">Order-₹150</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm763RVJqoYZQFcuOMylBKLEbo-NQSu7e4uQ&s" alt="Pizza" />
+        <h3>Sandwich</h3>
+        <p>Stacked high with fresh fillings and flavor.</p>
+         <button onclick="addToOrder('Sandwich',170)">Order-₹170</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDAgRS4dOUEb_Uvg6zQY708YNs5M3j0DxaA&s" alt="Burger" />
+        <h3>Wafers</h3>
+        <p>"Layered with flavor in every bite."</p>
+         <button onclick="addToOrder('Wafers',120)">Order-₹120</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSjSN1ZVywSohgc9rYR6LIzGp89uULSG48A&s" alt="Pasta" />
+        <h3>Creamy Pasta</h3>
+        <p>Momos are filled with  meat.</p>
+         <button onclick="addToOrder('Creamy Pasta',200)">Order-₹200</button>
+      </div>
+      <div class="dish">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Oung_2k_mZ0aylt-8CTofsl0OcTUMWsTIg&s" alt="Pasta" />
+        <h3>chicken shawarma</h3>
+        <p>Shawarma is a well-known Middle Eastern meat sandwich.</p>
+         <button onclick="addToOrder('chicken shawarma',150)">Order-₹150</button>
+      </div>
+    </div>
+  </section>
+
+   <section id="Milkshake" class="fade-in">
+    <h2>Milkshake</h2>
+    <div class="Milkshake-grid">
+      <div class="Milkshake-item">
+        <img src="https://b.zmtcdn.com/data/pictures/4/20460874/e1d8d0435b8284656ac088df82818fb8_featured_v2.jpg?output-format=webp" alt="Food 1" >
+        <p>Krimmy Thickshake</p>
+         <button onclick="addToOrder('Krimmy Thickshake',100)">Order-₹100</button>
+      </div>
+      <div class="Milkshake-item">
+        <img src="https://sreerajlassibar.com/wp-content/uploads/2024/08/Choco-Milkshake.png" alt="Food 2">
+        <p>Chocolate Milkshake</p>
+         <button onclick="addToOrder('Chocolate Milkshake',100)">Order-₹100</button>
+      </div>
+      <div class="Milkshake-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPl_g0hOTAh0CH6YEaWXDVes7WEUcwhKSMw&s" alt="Food 3">
+        <p>Thick Chocolate</p>
+         <button onclick="addToOrder('Thick Chocolate',100)">Order-₹100</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="fade-in">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service-box">
+        <h3>🛵 Home Delivery</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffziGN2dgM9FJRqy0S325i9Dq3yx-l6qFHg&s" id="img1">
+          <p>Get your food at your doorstep, fast and hot.</p>
+      </div>
+      <div class="service-box">
+        <h3>👨‍🍳 Private Catering</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NDfCbP4LFRSZm9xl2LfhCW54ogAACZ0qnA&s" id="img1">
+        <p >We cater for parties, weddings and corporate events.</p>
+      </div>
+      <div class="service-box">
+        <h3>☕ Dine-In</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4g55XwTwP8M5nZ649bFDp3UXklsvpHIsT-Q&s" id="img1">
+        <p>Enjoy a relaxing dine-in experience in our cozy space.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+  <h2>🛒 Your Order</h2>
+  <ul id="order-list"></ul>
+  <div class="total">Total: ₹<span id="total-price">0</span></div>
+</section>
+ 
+<!-- Payment -->
+<section id="payment" class="payment">
+  <h2>Payment</h2>
+
+  <!-- Delivery type -->
+  <label for="delivery-type">Choose Delivery:</label>
+  <select id="delivery-type" onchange="toggleDeliveryFields()">
+    <option value="pickup">Pickup</option>
+    <option value="home">Home Delivery</option>
+  </select>
+
+  <!-- Address field (only for Home Delivery) -->
+  <div id="address-field" style="display:none; margin-top:1rem;">
+    <input type="text" id="customer-address" placeholder="Enter your delivery address">
+  </div>
+
+  Payment method
+  <label for="payment-method">Choose Payment:</label>
+  <select id="payment-method" onchange="togglePaymentFields()">
+    <option value="online">Online Payment</option>
+    <option value="cod">Cash on Delivery</option>
+  </select>
+
+  <!-- Online payment fields -->
+  <div id="online-fields">
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="Expiry Date">
+    <input type="text" placeholder="CVV">
+  </div>
+
+  <button onclick="confirmOrder()">Confirm Order</button>
+  <p id="confirmation" style="margin-top:1rem;color:green;font-weight:bold;"></p>
+</section>
+
+
+
+
+  <section id="reviews" class="fade-in">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      <blockquote>“Absolutely delicious! The ambiance was perfect.”</blockquote>
+      <blockquote>“Best dining experience I’ve had in years.”</blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  
+  
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>📞 602-774-4735</p>
+      <p>📍 11022 South 51st Street Suite 105<br>Phoenix, AZ 85044</p>
+      <p>✉️ tastybite.com</p>
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <h3>Navigate</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services">Book Now</a></li>
+      </ul>
+    </div>
+
+   
+
+    <!-- Follow Us -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#f">Facebook</a></li>
+        <li><a href="#https://www.instagram.com/?next=%2F">Instagram</a></li>
+        <li><a href="#l">LinkedIn</a></li>
+        <li><a href="#t">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
