@@ -3,7 +3,7 @@
 TastyBite is a responsive restaurant menu and food delivery website built with HTML, CSS, and JavaScript.  
 Users can browse the menu, add items to their cart, and place delivery orders online.
 
-Live Demo: [https://tastybite-iota.vercel.app](https://tastybite-iota.vercel.app)
+Live Demo: [ https://tastybite-iota.vercel.app ] (https://tastybite-iota.vercel.app)
 
 ## Tech Stack
 - HTML  
@@ -12,7 +12,7 @@ Live Demo: [https://tastybite-iota.vercel.app](https://tastybite-iota.vercel.app
 - Deployed on Vercel
 
 ## Run Locally
-git clone https://github.com/yourusername/tastybite.git  
+git clone 
 cd tastybite  
 open index.html
 
